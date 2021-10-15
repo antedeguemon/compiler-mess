@@ -21,7 +21,7 @@ defmodule CompilerMess.Injector do
 
       {module, {_set, bag}, _, _source, _} ->
         unless module in seen_modules do
-          IO.puts("Injected @before_compile to #{module}")
+          IO.puts("Injected @before_compile into #{module}")
 
           :ets.insert(
             bag,

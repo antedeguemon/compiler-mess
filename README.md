@@ -15,9 +15,9 @@ Erlang/OTP 24 [erts-12.0.3] [source] [64-bit] [smp:12:12] [ds:12:12:10] [async-t
 
 Messing around with the Elixir compiler
 Compiling 4 files (.ex)
-Injected @before_compile to Elixir.CompilerMess
-Injected @before_compile to Elixir.CompilerMess.Injector
-Injected @before_compile to Elixir.Mix.Tasks.Compile.CompilerMess
+Injected @before_compile into Elixir.CompilerMess
+Injected @before_compile into Elixir.CompilerMess.Injector
+Injected @before_compile into Elixir.Mix.Tasks.Compile.CompilerMess
 Interactive Elixir (1.12.0) - press Ctrl+C to exit (type h() ENTER for help)
 iex(1)> CompilerMess.injected?()
 true
