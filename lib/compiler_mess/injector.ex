@@ -4,6 +4,7 @@ defmodule CompilerMess.Injector do
   def loop(seen_modules \\ []) do
     case :ets.tab2list(:elixir_modules) do
       [] ->
+        # Mix.Compilers.Elixir will exists as long the compilation is running
         unless length(seen_modules) > 0 and is_nil(Process.get(Mix.Compilers.Elixir)) do
           loop(seen_modules)
         end
