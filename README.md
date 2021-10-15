@@ -48,7 +48,7 @@ compilers: Mix.compilers() ++ [:compiler_mess]
 This new compiler is a compilation task that:
 1. Spawns a loop that keeps updating Elixir internal `elixir_modules` ETS table.
   a. Checks for new modules on the table and injects a `before_hook` into them
-  calling `CompilerMess.Probe` module.
+     referring the `CompilerMess.Probe` module.
 2. Runs `mix compile.elixir --force` so all project modules are re-compiled.
 
 The `elixir_modules` table is where module callbacks are stored during module
